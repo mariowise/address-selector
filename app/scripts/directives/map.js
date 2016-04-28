@@ -49,6 +49,8 @@ angular.module('cornershopAngularApp')
       	};
 
       	$scope.create = function () {
+          console.log('Creating marker');
+          console.log($scope.newMarker);
           if( $scope.newMarker.save() ) {
       			$('#newMarkerModal').modal('hide');
             $scope.targetMark = false;
